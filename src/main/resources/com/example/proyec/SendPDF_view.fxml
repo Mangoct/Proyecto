@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="161.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyec.SendPDF_controller">
+   <children>
+      <Label layoutX="29.0" layoutY="14.0" text="Escriba el correo al que desee enviar el PDF">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="Campo_Email" layoutX="29.0" layoutY="53.0" prefHeight="25.0" prefWidth="344.0" />
+      <Button fx:id="btn_Enviar" contentDisplay="RIGHT" layoutX="29.0" layoutY="94.0" mnemonicParsing="false" onAction="#handler_Enviar" text="Enviar">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Entrega T0402-Méndez_Martínez-Juan-Francisco/T0402-Méndez_Martínez-Juan-Francisco/src/main/resources/email_send_message_envelopme_electronic_icon-icons.com_59988.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btn_Cancelar" contentDisplay="RIGHT" layoutX="237.0" layoutY="94.0" mnemonicParsing="false" onAction="#handler_Cancelar" text="Cancelar">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Entrega T0402-Méndez_Martínez-Juan-Francisco/T0402-Méndez_Martínez-Juan-Francisco/src/main/resources/cancel_close_delete_exit_logout_remove_x_icon_123217.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
